@@ -1,0 +1,23 @@
+import { Meta, Story } from "@storybook/addon-docs"
+import { ColorBox } from "./FoundationComponents"
+
+<Meta
+  title='Fundations/Colors'
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { 
+      canvas: { hidden: true } 
+     },
+  }}
+/>
+
+
+# Colors
+
+This palette is used for brand colors, and can easily be updated to reflect the needs of a project, as well as the brand colors of the project and used in client specific components.
+
+<Story name='ColorBox'>
+  <div style={{ display: 'grid', 'grid-template-columns': 'repeat(auto-fit, minmax(200px, 1fr))', 'grid-gap': '1rem' }}>
+{ COLORS }
+  </div>
+</Story>
